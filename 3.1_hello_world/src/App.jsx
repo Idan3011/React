@@ -4,13 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 
-const reactDescriptions =['Fundamental', 'Crucial', 'Core'];
-
-function getRandomInt(mex){
-  return Math.floor(Math.random()*(max+1));
+function HelloWorld(){
+  
 }
 function App() {
   const [count, setCount] = useState(0)
+
+ 
 
   return (
     <>
