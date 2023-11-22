@@ -12,3 +12,26 @@ export function HelloWorld(){
     )
 }
 
+const number1 = 5;
+const number2 =6;
+
+export function Calc (){
+    const number1 = 5;
+    const number2 =6;
+    const total = number1+number2;
+        return (
+        <div>
+            <p>the sum total is: {total}</p>
+        </div>
+    )
+}
+
+export function StrLength(){
+    const str = 'I love React';
+    const length = str.length;
+    return (
+        <div>
+            <p>The string length is: {length}</p>
+        </div>
+    )
+}
