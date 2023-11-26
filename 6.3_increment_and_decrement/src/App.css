@@ -1,0 +1,31 @@
+body{
+  top:0;
+  left:0;
+  padding: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-item{
+  width: 12rem;
+  height: 14rem;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 0.1rem solid black;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.black {
+  background: black;
+  color:white
+}
