@@ -1,0 +1,38 @@
+#root {
+ width:100%;
+  top:0;
+  left:0;
+  text-align: center;
+}
+
+#box-container{
+  display: flex;
+  justify-content:space-evenly;
+  width:100%;
+  margin-top:10rem;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 3rem;
+}
+
+.box-content{
+  width:15rem;
+  height: 17rem;
+  border:0.1rem solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.box-item{
+  background: yellow;
+  width: 50% ;
+  height: 50%;
+}
+.btn {
+  margin-bottom: 0rem;
+}
+.btn-hide {
+  margin-bottom: 6rem;
+}
