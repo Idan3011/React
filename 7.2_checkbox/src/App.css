@@ -1,0 +1,10 @@
+.container{
+  width: 41%;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 21rem;
+    margin-top: 12rem;
+
+}
