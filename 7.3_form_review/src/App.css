@@ -1,0 +1,41 @@
+div.form-container{
+  display: flex;
+  width: 25rem;
+  height: 15rem;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+  margin-left: 17rem;
+  margin-top: 8rem;
+}
+
+
+div.form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 0.1rem solid black;
+    height: 28rem;
+    width: 11rem;
+    padding: 7px 5rem;
+    margin-top: 5rem;
+    margin-left: 13rem;
+}
+
+
+
+.not-active {
+  display: none;
+}
+
+.new-text-container{
+  width: 29%;
+  height: 17rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25rem;
+  margin-top: 8rem;
+  border: 0.1rem solid black;
+  align-items: center;
+  justify-content: space-evenly;
+}
