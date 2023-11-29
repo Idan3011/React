@@ -1,0 +1,14 @@
+.Ex2_3 {
+    display: flex;
+    margin-top: 1rem;
+    width: 67%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 15.5rem;
+}
+
+h5 {
+padding:0 3rem;
+}
+
