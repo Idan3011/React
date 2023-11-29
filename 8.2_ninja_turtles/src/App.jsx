@@ -7,6 +7,8 @@ function App() {
   const [toppingArray, setToppingArray] = useState([]);
   
 
+let arr =toppingArray
+console.log(arr);
 
 
 
@@ -31,6 +33,9 @@ function App() {
           <Toppings toppingArr={toppingArray} isClicked={buttonClick} />
         </div>
       </main>
+      <section className={arr.length ==5 ? 'section h3' : 'not-active'}>
+        <h3>you Have reached the maximum possible toppings!</h3>
+      </section>
     </>
   );
 }
