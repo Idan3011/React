@@ -1,0 +1,31 @@
+
+.img-container{
+    background: #5d1010;
+    height: 7rem;
+    width: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-container img{
+    width: 4rem;
+    height: 5rem;
+    border-radius: 50%;
+
+}
+
+.img-container h3{
+    background-color: initial;
+}
+.active-container{
+    background: rgb(216, 57, 57);
+    height: 7rem;
+    width: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}

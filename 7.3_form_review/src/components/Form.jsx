@@ -7,10 +7,9 @@ const Form = () => {
     text: "Write Something",
   };
   const [inputText, setInputText] = useState(initial);
-  const [clickOn, setClickOn] = useState(false)
+  const [clickOn, setClickOn] = useState(false);
   function handleINput(e) {
-    setInputText({...inputText, [e.target.name]: e.target.value });
-    
+    setInputText({ ...inputText, [e.target.name]: e.target.value });
   }
   // console.log(inputText)
   const [isSubmit, setIsSubmit] = useState(false);
@@ -18,29 +17,26 @@ const Form = () => {
   function hanldeSubmit(e) {
     e.preventDefault();
     setIsSubmit(true);
-    }
-  function handleClick(){
-    setClickOn(true)
+  }
+  function handleClick() {
+    setClickOn(true);
   }
 
-  
-
-
   if (isSubmit) {
-    newText = 
-      <div className={isSubmit ? 'new-text-container' : 'not-acticve'}>
+    newText = (
+      <div className={isSubmit ? "new-text-container" : "not-acticve"}>
         <p>First Nmae: {inputText.fname}</p>
         <p>Last Name: {inputText.lname}</p>
         <p>Your Comment: {inputText.text}</p>
         <button onClick={handleClick}>Back</button>
         <button onClick={handleClick}>Send Survey</button>
       </div>
-  
+    );
   }
 
   return (
     <>
-      <div className={!isSubmit ? 'form-container' : 'not-active'} >
+      <div className={!isSubmit ? "form-container" : "not-active"}>
         <form className="form" onSubmit={hanldeSubmit}>
           <label htmlFor="fname">First Name</label>
           <input
@@ -66,16 +62,10 @@ const Form = () => {
             placeholder={initial.text}
             required
           ></textarea>
-          <input
-            type="submit"
-            name="submit"
-            value="CONFRIM"
-            
-          />
+          <input type="submit" name="submit" value="CONFRIM" />
         </form>
       </div>
       {newText}
-      
     </>
   );
 };

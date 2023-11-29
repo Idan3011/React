@@ -20,7 +20,7 @@ function App() {
              <input  type="checkbox"  defaultChecked={!checked}  name={index}/>
              <label htmlFor={index}>{element}</label>
              </div>
-        )}  else {
+        )}  {
           return( 
           <div key={index}>
              <input  type="checkbox"  defaultChecked={checked}  name={index}/>
