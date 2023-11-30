@@ -21,6 +21,7 @@ function App() {
     <>
       <Functions getName={handleName} />
       <Name getName={name}/>
+      
     </>
   );
 }
