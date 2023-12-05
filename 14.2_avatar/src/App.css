@@ -1,0 +1,10 @@
+.content-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1rem;
+}
+.content-container input[type='text'] {
+  width: 15%;
+}
