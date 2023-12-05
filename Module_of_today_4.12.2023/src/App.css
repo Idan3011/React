@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Ex-container{
+  min-height: 110vh;
+  width: 100%;
+  background: #e6e0e0f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin:auto;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+.Ex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin:auto;
+}
+
+.box1 {
+  width: 5rem;
+  height: 4rem;
+  background-color: red;
+  animation: mymove 4s infinite;
+ position: relative;
+ border-radius: 0.5rem;
+
+}
+.box2 {
+  width: 2rem;
+  height: 1rem;
+  background-color: blue;
+  animation: mymove 4s infinite;
+ position: relative;
+ border-radius: 0.5rem;
+
+
+}
+.box3 {
+  width: 8rem;
+  height:3rem;
+  background-color: green;
+  animation: mymove 4s infinite;
+ position: relative;
+ border-radius: 0.5rem;
+
+
+}
+
+@keyframes mymove {
+  from {left: -570px;}
+  to {left: 570px;}
+}
+
+.none{
+  animation: fadeOut 4s;
+
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+.Ex_13_3 .box {
+  width: 5rem;
+  height: 4rem;
+  background: blue;
+}
+
+@keyframes animate1 {
+  from{
+      transform: rotate(0deg);
+  }
+ to {
+  transform: rotate(360deg);
+ }
+}
+
+
+
+.btn2{
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  position: relative;
+  top:0;
+  left:0;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%; 
+  opacity: 0.5; 
+  border:none;
+  background-color: initial;
+}
+.btn2:before{
+  content:"";
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  align-self: center;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  border-top:0.2rem solid gold;
+  border-radius: 50%;
+  transform: translate(0rem);
+  animation: animate1 2s ease-in  infinite;
+  z-index: 3;
+  opacity: 1;
+}
