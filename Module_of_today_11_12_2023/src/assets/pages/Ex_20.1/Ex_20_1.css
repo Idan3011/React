@@ -1,0 +1,51 @@
+.Ex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 10rem;
+  width: 100%;
+  padding-top: 8rem 0;
+  gap: 3rem;
+  padding-top: 1rem;
+}
+
+.Ex .page {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    font-size: 1.1rem;
+}
+
+.content-container .plus{
+    background-color: green;
+}
+
+.content-container .minus {
+    background-color: red;
+}
+
+.content-container .green {
+    background: green;
+}
+
+.content-container .red{
+    background: red;
+}
+
+.content-container .black{
+    background-color: black;
+}
