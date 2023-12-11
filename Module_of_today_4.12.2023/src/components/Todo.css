@@ -4,7 +4,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap:1rem
+    gap:1rem;
+    background-color: rgb(230, 221, 221);
 }
 
 .content-container h1 {
@@ -31,4 +32,52 @@
 
 .not-active{
     display: none;
+}
+
+.persons-container{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat;
+    grid-template-rows: repeat(20, 1fr);
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem 3rem;
+    row-gap: 2rem;
+    column-gap: 2rem;
+
+}
+
+.card-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #f7f7f7f7;
+    border-radius: 0.5rem;
+    box-shadow: 0px 3px 3px 2px rgba(0,0,0,0.2);
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1rem
+}
+
+.card-container h1 {
+    font-size: 1.2rem;
+    font-family: fantasy;
+}
+
+.card-container img {
+    width: 50%;
+    height: 35%;
+}
+
+.card-container ul {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.card-container ul li {
+    list-style: none;
+    font-size: 0.8rem;
 }
