@@ -19,15 +19,13 @@ export default class Ex_20_2 extends React.Component {
         [this.state.data[index]]: (prev.data[index].completed = !false),
       }));
     }
-    if(toDo === this.state.data[index].completed && toDo == true){
-   this.setState((prev)=>({
-    [this.state.data[index]]: (prev.data[index].completed = !true)
-   }));
-   
-  }
+    if (toDo === this.state.data[index].completed && toDo == true) {
+      this.setState((prev) => ({
+        [this.state.data[index]]: (prev.data[index].completed = !true),
+      }));
+    }
   };
   render() {
-    const { name, completed } = this.props;
     const { data } = this.state;
     return (
       <div className="Ex">
@@ -51,8 +49,3 @@ export default class Ex_20_2 extends React.Component {
     );
   }
 }
-
-
-// this.setState((status) => ({
-//   [this.State.data[index]]: (status.data[index].completed = !true),
-// }));

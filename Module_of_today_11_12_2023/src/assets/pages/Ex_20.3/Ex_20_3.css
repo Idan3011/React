@@ -1,0 +1,15 @@
+
+
+.Ex_20_3 .time{
+    display: flex;
+    gap: 9rem;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+.Ex_20_3 .inputs{
+    display: flex;
+    gap:1rem;
+    align-self: center;
+}
